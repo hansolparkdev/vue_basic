@@ -7,13 +7,22 @@
   <body>
     <div id = "app">
       <h1>{{ message }}</h1>
+      <h1>{{ price }}</h1>
+      <h1>{{ list }}</h1>
+      <h1>{{ object }}</h1>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
       new Vue({
         el : '#app',
         data : {
-          message : 'Hello Vue!'
+          message : 'Hello Vue!', // String
+          price : 10000, // Number
+          list : ['ONE', 'TWO'],//list
+          object : { //object
+            a : 1,
+            b : 2
+          }
         }
       })
     </script>
