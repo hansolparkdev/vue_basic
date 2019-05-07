@@ -1,1 +1,21 @@
-fdsfs
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue basic</title>
+  </head>
+  <body>
+    <div id = "app">
+      <h1>{{ message }}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      new Vue({
+        el : '#app',
+        data : {
+          message : 'Hello Vue!'
+        }
+      })
+    </script>
+  </body>
+</html>
